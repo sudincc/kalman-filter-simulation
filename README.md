@@ -23,9 +23,9 @@ The core recursive loop follows standard discrete linear equations:
 
 ### 1. Prediction (Time Update)
 - State projection:  
-  $$\hat{x}_{k|k-1} = F \hat{x}_{k-1|k-1} + B u_k$$
+  \hat{x}_{k|k-1} = F \hat{x}_{k-1|k-1} + B u_k
 - Covariance projection:  
-  $$P_{k|k-1} = F P_{k-1|k-1} F^T + Q$$
+  P_{k|k-1} = F P_{k-1|k-1} F^T + Q
 
 ### 2. Correction (Measurement Update)
 - Kalman Gain:  
