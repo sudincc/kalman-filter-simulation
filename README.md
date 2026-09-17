@@ -3,6 +3,7 @@
 A clean, straightforward implementation of a discrete-time linear Kalman filter built to track dynamic states from noisy sensor measurements.
 
 I put this project together to bridge the gap between textbook linear control theory and a practical, hands-on simulation. Sensors in real-world systems (whether on a flight computer, rocket IMU, or mobile robot) are inevitably corrupted by noise. This filter demonstrates how fusing dynamic model predictions with noisy measurements yields an estimate that is substantially closer to the true state than raw sensor readings alone.
+<img width="1920" height="1200" alt="kalman_filtered" src="https://github.com/user-attachments/assets/cbc4f08b-512a-4109-9287-3984b2b70125" />
 
 ---
 
@@ -28,11 +29,11 @@ The core recursive loop follows standard discrete linear equations:
 
 ### 2. Correction (Measurement Update)
 - Kalman Gain:  
-  $$K_k = P_{k|k-1} H^T (H P_{k|k-1} H^T + R)^{-1}$$
+  K_k = P_{k|k-1} H^T (H P_{k|k-1} H^T + R)^{-1}
 - State estimate update:  
-  $$\hat{x}_{k|k} = \hat{x}_{k|k-1} + K_k (z_k - H \hat{x}_{k|k-1})$$
+  \hat{x}_{k|k} = \hat{x}_{k|k-1} + K_k (z_k - H \hat{x}_{k|k-1})
 - Error covariance update:  
-  $$P_{k|k} = (I - K_k H) P_{k|k-1}$$
+  P_{k|k} = (I - K_k H) P_{k|k-1}
 
 Where **$Q$** represents process noise covariance (trust in physics model) and **$R$** represents measurement noise covariance (trust in sensor data).
 
