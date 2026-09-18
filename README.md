@@ -3,7 +3,8 @@
 A clean, straightforward implementation of a discrete-time linear Kalman filter built to track dynamic states from noisy sensor measurements.
 
 I put this project together to bridge the gap between textbook linear control theory and a practical, hands-on simulation. Sensors in real-world systems (whether on a flight computer, rocket IMU, or mobile robot) are inevitably corrupted by noise. This filter demonstrates how fusing dynamic model predictions with noisy measurements yields an estimate that is substantially closer to the true state than raw sensor readings alone.
-<img width="1920" height="1200" alt="kalman_filtered" src="https://github.com/user-attachments/assets/cbc4f08b-512a-4109-9287-3984b2b70125" />
+<img width="1804" height="858" alt="kalman_filtered" src="https://github.com/user-attachments/assets/e90643ee-54d1-4f71-b7c9-c558579fd542" />
+
 
 ---
 
